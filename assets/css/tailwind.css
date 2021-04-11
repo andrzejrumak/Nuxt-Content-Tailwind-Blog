@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.nuxt-content-highlight {
+  @apply relative;
+}
+.nuxt-content-highlight .filename {
+  @apply absolute right-0 text-red-600 font-light z-10 mr-2 mt-1 text-sm;
+}
+
+@layer base {
+  body {
+    @apply from-gray-700 to-gray-300 bg-gradient-to-br;
+  }
+}
