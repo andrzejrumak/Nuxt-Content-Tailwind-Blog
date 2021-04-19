@@ -47,7 +47,7 @@
             />
 
             <div
-              class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full"
+              class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full dark:bg-black"
             >
               <h2 class="font-bold">{{ article.title }}</h2>
               <p>{{ article.description }}</p>

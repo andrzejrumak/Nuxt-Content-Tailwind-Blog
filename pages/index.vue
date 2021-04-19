@@ -1,5 +1,5 @@
 <template>
-  <div class="m-8 " >
+  <div class="p-8 " >
     <TheHeader />
 
     <h1 class="font-bold text-4xl dark:text-white">Artykuły</h1>

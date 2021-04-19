@@ -14,11 +14,16 @@
           Facebook o tym samym tytule.
         </p>
         <p class="text-gray-700 text-base">
-          Stronę tą tworzę samodzielnie w frameworku Nuxt js i będzie ona ciągle
-          rozwijana.
+          Stronę tą tworzę samodzielnie w frameworku Nuxt JS.
         </p>
         <p class="text-gray-700 text-base">
-          Wkróce napiszę coś więcej.
+          Kolejne wersje strony i jej nowe funkcjonalności.
+        </p>
+        <p class="text-gray-700 text-base">
+          Wersja 1.1: Dodanie wersji dark do czytania w nocy.
+        </p>
+        <p class="text-gray-700 text-base">
+          Wersja 1.2: Rozszerzenie o wersje PWA (Progressiw Web Application), która daje możliwość czytania bloga offline
         </p>
       </div>
     </div>

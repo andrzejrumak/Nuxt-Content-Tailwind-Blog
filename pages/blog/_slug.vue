@@ -69,7 +69,7 @@
       <!-- content from markdown -->
       <nuxt-content :document="article" />
       <!-- content author component -->
-      <author :author="article.author" />
+      <author :author="article.author"/>
       <!-- prevNext component -->
       <PrevNext :prev="prev" :next="next" class="mt-8" />
     </div>
