@@ -42,9 +42,9 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
+    // '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module',
+    // '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
@@ -55,8 +55,26 @@ export default {
    */
   modules: [
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content'
-  ],
+    '@nuxt/content',
+      'nuxt-i18n'
+    ],
+    
+  i18n: {
+    locales: ['en', 'pl'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        pl: {
+          welcome: 'Witaj'
+        },
+        en: {
+          welcome: 'Welcome'
+        },
+      }
+    }
+  },
+
   /*
    ** Content module configuration
    ** See https://content.nuxtjs.org/configuration
