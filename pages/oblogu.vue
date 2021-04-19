@@ -23,7 +23,8 @@
           Wersja 1.1: Dodanie wersji dark do czytania w nocy.
         </p>
         <p class="text-gray-700 text-base">
-          Wersja 1.2: Rozszerzenie o wersje PWA (Progressiw Web Application), która daje możliwość czytania bloga offline
+          Wersja 1.2: Rozszerzenie o wersje PWA (Progressiw Web Application),
+          która daje możliwość czytania bloga offline
         </p>
       </div>
     </div>

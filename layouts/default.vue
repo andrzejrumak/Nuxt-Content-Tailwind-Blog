@@ -6,10 +6,10 @@
 
 <script>
 export default {
-  methods:{
+  methods: {
     toggle() {
-    this.$colorMode.preference =
-      this.$colorMode.value == "light" ? "dark" : "light";
+      this.$colorMode.preference =
+        this.$colorMode.value == 'light' ? 'dark' : 'light'
     }
   }
 }

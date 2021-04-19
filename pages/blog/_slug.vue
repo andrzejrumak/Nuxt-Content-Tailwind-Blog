@@ -1,5 +1,7 @@
 <template>
-  <article class="flex lg:h-screen w-screen lg:overflow-hidden xs:flex-col lg:flex-row">
+  <article
+    class="flex lg:h-screen w-screen lg:overflow-hidden xs:flex-col lg:flex-row"
+  >
     <div class="relative lg:w-1/2 xs:w-full xs:h-84 lg:h-full post-left dark">
       <img
         :src="article.img"
@@ -28,14 +30,25 @@
         </span>
       </div>
       <div class="flex absolute top-3rem right-3rem">
-        <NuxtLink to="/" class="mr-8 self-center text-white font-bold hover:underline">
+        <NuxtLink
+          to="/"
+          class="mr-8 self-center text-white font-bold hover:underline"
+        >
           Artykuły
         </NuxtLink>
-        <NuxtLink to="/oblogu" class="mr-8 self-center text-white font-bold hover:underline">
+        <NuxtLink
+          to="/oblogu"
+          class="mr-8 self-center text-white font-bold hover:underline"
+        >
           O blogu
         </NuxtLink>
         <AppSearchInput />
-        <button @click="toggle" class=" ml-2 mb-4 border-2 rounded-md p-1 border-black" >{{ $colorMode.preference }}</button>
+        <button
+          class="ml-2 mb-4 border-2 rounded-md p-1 border-black"
+          @click="toggle"
+        >
+          {{ $colorMode.preference }}
+        </button>
       </div>
     </div>
     <div
@@ -51,7 +64,7 @@
             v-for="link of article.toc"
             :key="link.id"
             :class="{
-              'font-semibold': link.depth === 2,
+              'font-semibold': link.depth === 2
             }"
           >
             <nuxtLink
@@ -59,7 +72,7 @@
               class="hover:underline"
               :class="{
                 'py-2': link.depth === 2,
-                'ml-2 pb-2': link.depth === 3,
+                'ml-2 pb-2': link.depth === 3
               }"
               >{{ link.text }}</nuxtLink
             >
@@ -69,7 +82,7 @@
       <!-- content from markdown -->
       <nuxt-content :document="article" />
       <!-- content author component -->
-      <author :author="article.author"/>
+      <author :author="article.author" />
       <!-- prevNext component -->
       <PrevNext :prev="prev" :next="next" class="mt-8" />
     </div>
@@ -78,35 +91,35 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content("articles", params.slug).fetch();
-    const tagsList = await $content("tags")
-      .only(["name", "slug"])
+    const article = await $content('articles', params.slug).fetch()
+    const tagsList = await $content('tags')
+      .only(['name', 'slug'])
       .where({ name: { $containsAny: article.tags } })
-      .fetch();
-    const tags = Object.assign({}, ...tagsList.map((s) => ({ [s.name]: s })));
-    const [prev, next] = await $content("articles")
-      .only(["title", "slug"])
-      .sortBy("createdAt", "asc")
+      .fetch()
+    const tags = Object.assign({}, ...tagsList.map((s) => ({ [s.name]: s })))
+    const [prev, next] = await $content('articles')
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc')
       .surround(params.slug)
-      .fetch();
+      .fetch()
     return {
       article,
       tags,
       prev,
-      next,
-    };
+      next
+    }
   },
   methods: {
     formatDate(date) {
-      const options = { year: "numeric", month: "long", day: "numeric" };
-      return new Date(date).toLocaleDateString("pl", options);
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('pl', options)
     },
     toggle() {
-    this.$colorMode.preference =
-      this.$colorMode.value == "light" ? "dark" : "light";
+      this.$colorMode.preference =
+        this.$colorMode.value == 'light' ? 'dark' : 'light'
     }
-  },
-};
+  }
+}
 </script>
 <style>
 .nuxt-content p {
@@ -121,7 +134,7 @@ export default {
   font-size: 22px;
 }
 .icon.icon-link {
-  background-image: url("~assets/svg/icon-hashtag.svg");
+  background-image: url('~assets/svg/icon-hashtag.svg');
   display: inline-block;
   width: 20px;
   height: 20px;

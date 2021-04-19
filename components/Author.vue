@@ -9,7 +9,7 @@
         class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
         :src="author.img"
       />
-      <div class="flex flex-col m-4 ">
+      <div class="flex flex-col m-4">
         <h4 class="font-semibold">Author</h4>
 
         <p>{{ author.name }}</p>

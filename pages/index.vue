@@ -1,13 +1,13 @@
 <template>
-  <div class="p-8 " >
+  <div class="p-8">
     <TheHeader />
 
     <h1 class="font-bold text-4xl dark:text-white">Artykuły</h1>
-    <ul class="flex flex-wrap ">
+    <ul class="flex flex-wrap">
       <li
         v-for="article of articles"
         :key="article.slug"
-        class="xs:w-full md:w-1/2 px-2 xs:mb-6 md:mb-12 article-card  "
+        class="xs:w-full md:w-1/2 px-2 xs:mb-6 md:mb-12 article-card"
       >
         <NuxtLink
           :to="{ name: 'blog-slug', params: { slug: article.slug } }"
@@ -39,9 +39,7 @@
         class="xs:w-full md:w-1/3 lg:flex-1 px-2 text-center"
       >
         <NuxtLink :to="`/blog/tag/${tag.slug}`" class="">
-          <p
-            class="font-bold text-gray-600 uppercase tracking-wider  text-ss"
-          >
+          <p class="font-bold text-gray-600 uppercase tracking-wider text-ss">
             {{ tag.name }}
           </p>
         </NuxtLink>
@@ -55,7 +53,7 @@
           class="font-bold hover:underline"
           >Andrzej Rmak</a
         >
-        at NuxtJS. Special thanks for 
+        at NuxtJS. Special thanks for
         <a
           href="https://twitter.com/debs_obrien"
           class="font-bold hover:underline"
