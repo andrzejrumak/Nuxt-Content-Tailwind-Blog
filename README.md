@@ -4,9 +4,9 @@ The [content module](https://content.nuxtjs.org/) is a git files based headless 
 
 For detailed explanation on how to create this blog, check out [the tutorial](https://nuxtjs.org/blog/creating-blog-with-nuxt-content).
 
-Click here to view the [demo](https://blog-with-nuxt-content.netlify.app/)
+Click here to view the [jestemojcem.pl](https://www.jestemojcem.pl)
 
-![demo of blog](https://res.cloudinary.com/nuxt/video/upload/v1588091670/demo-blog-content_shk6kw.jpg)
+![demo of blog](https://www.jestemojcem.pl/jestemojcempl.jpg)
 
 ## Build Setup
 
