@@ -34,7 +34,7 @@
           to="/"
           class="mr-8 self-center text-white font-bold hover:underline"
         >
-          Artykuły
+          {{ $t('articles') }}
         </NuxtLink>
         <NuxtLink
           to="/oblogu"

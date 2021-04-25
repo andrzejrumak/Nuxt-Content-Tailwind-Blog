@@ -2,16 +2,18 @@
   <div class="p-8">
     <TheHeader />
 
-    <h1 class="font-bold text-4xl dark:text-white">Artykuły</h1>
+    <h1 class="font-bold text-4xl dark:text-white m-8">{{ $t('articles') }}</h1>
     <ul class="flex flex-wrap">
       <li
         v-for="article of articles"
         :key="article.slug"
-        class="xs:w-full md:w-1/2 px-2 xs:mb-6 md:mb-12 article-card"
+        class="xs:w-full md:w-1/2 px-2 xs:mb-6 md:mb-12 article-card bg-blue-800 hover:opacity-50"
       >
         <NuxtLink
-          :to="localePath({ name: 'blog-slug', params: { slug: article.slug } })"
-          class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
+          :to="
+            localePath({ name: 'blog-slug', params: { slug: article.slug } })
+          "
+          class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-xl xxlmax:flex-col"
         >
           <img
             v-if="article.img"
@@ -72,7 +74,6 @@
 
 <script>
 export default {
-
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
       .only(['title', 'description', 'img', 'slug', 'author'])

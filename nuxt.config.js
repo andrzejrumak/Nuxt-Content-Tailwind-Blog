@@ -1,3 +1,5 @@
+import i18n from './config/i18n'
+
 export default {
   /*
    ** Nuxt target
@@ -56,24 +58,42 @@ export default {
   modules: [
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
-      'nuxt-i18n'
-    ],
-    
-  i18n: {
-    locales: ['en', 'pl'],
-    defaultLocale: 'en',
-    vueI18n: {
-      fallbackLocale: 'en',
-      messages: {
-        pl: {
-          welcome: 'Witaj'
-        },
-        en: {
-          welcome: 'Welcome'
-        },
+    [
+      'nuxt-i18n',
+      {
+        vueI18nLoader: true,
+        defaultLocale: 'pl',
+        locales: [
+          {
+            code: 'en',
+            name: 'English'
+          },
+          {
+            code: 'pl',
+            name: 'Polski'
+          }
+        ],
+        vueI18n: i18n
       }
-    }
-  },
+    ]
+  ],
+
+  // i18n: {
+  //   locales: ['en', 'pl'],
+  //   defaultLocale: 'pl',
+  //   vueI18n: {
+  //     vueI18nLoader: true,
+  //     fallbackLocale: 'en',
+  //     messages: {
+  //       pl: {
+  //         welcome: 'Witajcie ojcowie'
+  //       },
+  //       en: {
+  //         welcome: 'Welcome'
+  //       }
+  //     }
+  //   }
+  // },
 
   /*
    ** Content module configuration
