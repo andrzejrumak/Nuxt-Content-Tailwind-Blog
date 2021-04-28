@@ -36,7 +36,9 @@
           class="w-full px-2 xs:mb-6 md:mb-12 article-card"
         >
           <NuxtLink
-            :to="{ name: 'blog-slug', params: { slug: article.slug } }"
+            :to="
+              localePath({ name: 'blog-slug', params: { slug: article.slug } })
+            "
             class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
           >
             <img
@@ -64,8 +66,8 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const articles = await $content('articles', params.slug)
+  async asyncData({ $content, app, params }) {
+    const articles = await $content(`${app.i18n.locale}'articles'`, params.slug)
       .where({
         'author.name': {
           $regex: [params.author, 'i']

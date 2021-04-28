@@ -19,15 +19,6 @@
           <p>{{ article.author.name }}</p>
         </div>
         <h1 class="text-6xl font-bold">{{ article.title }}</h1>
-        <span v-for="(tag, id) in article.tags" :key="id">
-          <NuxtLink :to="`/blog/tag/${tags[tag].slug}`">
-            <span
-              class="truncate uppercase tracking-wider font-medium text-ss px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear"
-            >
-              {{ tags[tag].name }}
-            </span>
-          </NuxtLink>
-        </span>
       </div>
       <div class="flex absolute top-3rem right-3rem">
         <NuxtLink
@@ -90,14 +81,20 @@
 </template>
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const article = await $content('articles', params.slug).fetch()
-    const tagsList = await $content('tags')
+  async asyncData({ $content, app, params, route, redirect }) {
+    console.log(app.i18n.locale)
+    console.log(params.slug)
+    const article = await $content(
+      `${app.i18n.locale}/articles`,
+      params.slug
+    ).fetch()
+
+    const tagsList = await $content(`${app.i18n.locale}/tags`)
       .only(['name', 'slug'])
       .where({ name: { $containsAny: article.tags } })
       .fetch()
     const tags = Object.assign({}, ...tagsList.map((s) => ({ [s.name]: s })))
-    const [prev, next] = await $content('articles')
+    const [prev, next] = await $content(`${app.i18n.locale}/articles`)
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc')
       .surround(params.slug)

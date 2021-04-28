@@ -1,7 +1,6 @@
 <template>
   <div class="p-8">
     <TheHeader />
-
     <h1 class="font-bold text-4xl dark:text-white m-8">{{ $t('articles') }}</h1>
     <ul class="flex flex-wrap">
       <li
@@ -33,14 +32,16 @@
         </NuxtLink>
       </li>
     </ul>
-    <h3 class="mb-4 font-bold text-2xl uppercase text-center">Tematy</h3>
+    <h3 class="mb-4 font-bold text-2xl uppercase text-center">
+      {{ $t('topics') }}
+    </h3>
     <ul class="flex flex-wrap mb-4 text-center">
       <li
         v-for="tag of tags"
         :key="tag.slug"
         class="xs:w-full md:w-1/3 lg:flex-1 px-2 text-center"
       >
-        <NuxtLink :to="`/blog/tag/${tag.slug}`" class="">
+        <NuxtLink :to="localePath(`/blog/tag/${tag.slug}`)" class="">
           <p class="font-bold text-gray-600 uppercase tracking-wider text-ss">
             {{ tag.name }}
           </p>
@@ -74,12 +75,14 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const articles = await $content('articles', params.slug)
+  async asyncData({ $content, app, params, route, redirect }) {
+    console.log(app.i18n.locale)
+    console.log(params.slug)
+    const articles = await $content(`${app.i18n.locale}/articles`, params.slug)
       .only(['title', 'description', 'img', 'slug', 'author'])
       .sortBy('createdAt', 'desc')
       .fetch()
-    const tags = await $content('tags', params.slug)
+    const tags = await $content(`${app.i18n.locale}/tags`, params.slug)
       .only(['name', 'description', 'img', 'slug'])
       .sortBy('createdAt', 'asc')
       .fetch()
