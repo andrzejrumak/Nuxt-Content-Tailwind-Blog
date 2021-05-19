@@ -1,25 +1,25 @@
 ---
-title: Zmartwychwstanie.
-description: Syn nie pozostał w grobie - Ojciec go zabrał do siebie.
+title: The Resurrection.
+description: The Son did not remain in the grave - the Father took him to Himself.
 img: /pustygrob.jpg
-alt: konsekwencja
+alt: empty
 utworzono: 04.04.2021
 author:
   name: Andrzej
-  bio: Ojciec trójki dzieci.
+  bio: Father of 3 children
   img: /ois.jpg
 tags:
-  - moje
+  - my
 ---
 
-<h2> Pusty grób. </h2>
+<h2> The empty tomb. </h2>
 
-Jak dobrze, że Ojciec nie zostawił Syna w grobie, ożywił go i zabrał go do siebie.
+How good it was that the Father did not leave the Son in the grave, He revived Him and took Him to Himself.
 
-Całe piekło się już radowało, ponieważ ukrzyżowano i złożono do grobu Syna Bożego. Jednak Ojciec nie pozostał obojetny, wzbudził go z martwych.
+All hell was already rejoicing because the Son of God had been crucified and laid in the tomb. But the Father was not indifferent; He raised Him from the dead.
 
-Jezus Chrystus żyje, triumfujący, zwycieski, niepokonany - grób jest pusty.
+Jesus Christ is alive, triumphant, victorious, invincible - the tomb is empty.
 
-Gdy wydaje się, że twoje dziecko jest już na straconej pozycji to nie poddawaj się, ani nie bądź obojętny ale ze wszystkich sił wesprzyj go.
+When it seems that your child is already at a loss, do not give up, do not be indifferent, but support him with all your might.
 
-Życzę wszystkim ojcom w świąteczny czas, ale i na co dzień, zwycięstwa z największymi zmaganiami w swym ojcostwie.
+I wish all fathers at Christmas time, but also every day, victory with the greatest struggles in their fatherhood.

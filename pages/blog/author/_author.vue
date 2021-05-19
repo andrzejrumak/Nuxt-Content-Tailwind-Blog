@@ -67,7 +67,7 @@
 <script>
 export default {
   async asyncData({ $content, app, params }) {
-    const articles = await $content(`${app.i18n.locale}'articles'`, params.slug)
+    const articles = await $content(`${app.i18n.locale}/articles`, params.slug)
       .where({
         'author.name': {
           $regex: [params.author, 'i']

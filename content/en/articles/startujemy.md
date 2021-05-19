@@ -1,17 +1,17 @@
 ---
-title: Zakładam blog, stronę - Jestem Ojcem
-description: Co? Jak? Dlaczego?
+title: I'm starting a blog, a website - I'm a Father
+description: What? How? Why?
 img: /books.jpg
 alt: jestem
 author:
   name: Andrzej
-  bio: Ojciec trójki dzieci.
+  bio: Father of 3 children
   img: /ois.jpg
 tags:
-  - moje
+  - my
 ---
 
-<h2>  Zakładam Blog - Jestem Ojcem </h2>
-<h3> Witajcie ojcowie, tatusiowie. </h3>
-Dziś w mojej rodzinie szczególny dzień więc spontanicznie  ruszam ze stroną www by uczcić ten fakt.
-Moja dwójka dorosłych dzieci zdobyła wyższe wykształcenie broniąc swoich prac dyplomowych. Już dawno wkroczyli w swoje dorosłe życie i już są samodzielni lecz dalej potrzebują wsparcia. Mój najmłodszy syn wciąż potrzebuje wiele uwagi aby wyrósł na tak samodzielną i mądrą osobę jak dwoje starszych. Więc wiele się nauczyłem jeśli chodzi bycie tatą, ojcem ale też wiele wezwań przede mną. O tym wszystkim chcę pisać i może któryś z was skorzysta. Oczywiście będę również rozwijał stronę bloga, która w tej chwili stanowi minimalną wersję tego co w planie. Wkrótce kolejne artykuły.
+<h2>Starting a Blog - I'm a Father </h2>
+<h3> Welcome fathers, dads. </h3>
+Today is a special day in my family so I am spontaneously starting a website to celebrate.
+My two adult children have graduated from college and defended their thesis. They have long since entered their adult life and are already independent but still need support. My youngest son still needs a lot of attention to grow up to be as independent and smart as the two older ones. So I have learned a lot when it comes to being a dad and a father, but I also have many challenges ahead of me. These are all things I want to write about and maybe some of you will benefit. Of course I will also be developing the blog page, which at the moment is a minimal version of what is in the plan. More articles coming soon.

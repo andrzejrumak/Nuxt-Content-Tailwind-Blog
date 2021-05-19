@@ -1,31 +1,33 @@
 <template>
-  <div class="m-8">
+  <div class="m-8 dark:text-white">
     <TheHeader />
     <Editor />
-    <div class="font-bold text-xl m-4">O blogu</div>
-    <div class="font-bold text-lg m-4">Co? Jak? Dlaczego?</div>
-    <div class="max-w-xl m-2 rounded overflow-hidden shadow-lg">
-      <img class="w-full" src="/ois.jpg" alt="Ojciec i syn" />
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">Blog Jestem Ojcem</div>
-        <p class="text-gray-700 text-base">
-          Blog ten powstał w szczególnym dniu, w którym moja dorosła córka i syn
-          obronili pracę dyplomową. Jest to też rozszerzenie dla strony na
-          Facebook o tym samym tytule.
-        </p>
-        <p class="text-gray-700 text-base">
-          Stronę tą tworzę samodzielnie w frameworku Nuxt JS.
-        </p>
-        <p class="text-gray-700 text-base">
-          Kolejne wersje strony i jej nowe funkcjonalności.
-        </p>
-        <p class="text-gray-700 text-base">
-          Wersja 1.1: Dodanie wersji dark do czytania w nocy.
-        </p>
-        <p class="text-gray-700 text-base">
-          Wersja 1.2: Rozszerzenie o wersje PWA (Progressiw Web Application),
-          która daje możliwość czytania bloga offline
-        </p>
+    <div class="dark:text-white">
+      <div class="font-bold text-xl m-4">{{ $t('about_blog') }}</div>
+      <div class="font-bold text-lg m-4">{{ $t('what_how_why') }}</div>
+      <div class="max-w-xxl m-2 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="/ois.jpg" alt="Ojciec i syn" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">{{ $t('blog') }}</div>
+          <p class="text-base">
+            {{ $t('blog_start') }}
+          </p>
+          <p class="text-base">
+            {{ $t('blog_creating') }}
+          </p>
+          <p class="text-base">
+            {{ $t('about_versions') }}
+          </p>
+          <p class="text-base">
+            {{ $t('v_1.1') }}
+          </p>
+          <p class="text-base">
+            {{ $t('v_1.2') }}
+          </p>
+          <p class="text-base">
+            {{ $t('v_1.3') }}
+          </p>
+        </div>
       </div>
     </div>
   </div>

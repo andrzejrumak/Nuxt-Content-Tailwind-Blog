@@ -8,7 +8,7 @@ author:
   bio: Ojciec trójki dzieci.
   img: /ois.jpg
 tags:
-  - mine
+  - my
 ---
 
 <h2> Direction of Life </h2>

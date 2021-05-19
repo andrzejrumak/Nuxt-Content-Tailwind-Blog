@@ -8,7 +8,7 @@ author:
   bio: Father of 3 children
   img: /ois.jpg
 tags:
-  - moje
+  - my
 ---
 
 <h2> Consistency </h2>

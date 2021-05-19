@@ -1,9 +1,9 @@
 <template>
   <div>
     <header class="p-3 flex">
-      <NuxtLink to="localePath(/)"><Logo class="mb-4" /></NuxtLink>
-      <NuxtLink to="localePath(/oblogu)">O blogu</NuxtLink>
-      <AppSearchInput class="ml-8" />
+      <NuxtLink :to="localePath('index')"><Logo class="mb-4" /></NuxtLink>
+      <NuxtLink :to="localePath('/oblogu')">{{ $t('about') }}</NuxtLink>
+      <!--AppSearchInput class="ml-8" /-->
       <LangInput class="ml-2 mb-4 border-2 rounded-md p-1 border-black" />
       <button
         class="ml-2 mb-4 border-2 rounded-md p-1 border-black"

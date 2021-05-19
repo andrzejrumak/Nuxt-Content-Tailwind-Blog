@@ -9,7 +9,7 @@ author:
   bio: The father of 3 children.
   img: /ois.jpg
 tags:
-  - moje
+  - my
 ---
 
 <h2> An Animal in the family. </h2>

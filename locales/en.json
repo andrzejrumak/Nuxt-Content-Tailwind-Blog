@@ -1,7 +1,18 @@
 {
     "message": "Welcome Father",
     "articles": "Articles",
+    "about": "About",
+    "back": "Back",
+    "tagged": "Article tagged",
     "topics": "Topics",
     "blog": "A blog for and about fathers",
-    "blog_welcome": "Welcome to the blog on fatherhood. We are fathers but remember that each of us has a father. Our fatherhood is influenced by our father here on earth but also I believe the one who is the Father presented by Jesus Christ."
+    "blog_welcome": "Welcome to the blog on fatherhood. We are fathers but remember that each of us has a father. Our fatherhood is influenced by our father here on earth but also I believe the one who is the Father presented by Jesus Christ.",
+    "about_blog": "About Blog",
+    "what_how_why": "What? How? Why?",
+    "blog_start": "This blog was created on the special day that my adult daughter and son both defended their graduate thesis. It is also an extension to the Facebook page of the same name.",
+    "blog_creating": "I create this website on my own in the framework Nuxt.",
+    "about_versions": "Subsequent versions of the site and its new features.",
+    "v_1.1": "Version 1.1: Adding a dark version for nighttime reading.",
+    "v_1.2": "Version 1.2: Expanded to include a PWA (Progressive Web Application) version that gives you the ability to read your blog offline.",
+    "v_1.3": "Version 1.3: I am adding an English language version of articles and parts of the site."
 }

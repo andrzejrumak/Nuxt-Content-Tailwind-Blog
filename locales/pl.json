@@ -1,7 +1,18 @@
 {
     "message": "Witaj tato",
     "articles": "Artykuły",
+    "about": "O Blogu",
+    "back": "Powrót",
+    "tagged": "Artykuły w zakresie tematów",
     "topics": "Tematy",
     "blog": "Blog dla ojców i o Ojcu",
-    "blog_welcome": "Witam serdecznie na blogu poświęconym ojcostwie. Jesteśmy ojcami ale pamiętajmy, że każdy z nas ma ojca. Na nasze ojcostwo ma wpływ naszego ojca tu na ziemi ale też wierzę tego, który jest Ojcem zaprezentowanym przez Jezusa Chrystusa."
+    "blog_welcome": "Witam serdecznie na blogu poświęconym ojcostwie. Jesteśmy ojcami ale pamiętajmy, że każdy z nas ma ojca. Na nasze ojcostwo ma wpływ naszego ojca tu na ziemi ale też wierzę tego, który jest Ojcem zaprezentowanym przez Jezusa Chrystusa.",
+    "about_blog": "O Blogu",
+    "what_how_why": "Co? Jak? Dlaczego?",
+    "blog_start": "Blog ten powstał w szczególnym dniu, w którym moja dorosła córka i syn obronili pracę dyplomową. Jest to też rozszerzenie dla strony na Facebook o tym samym tytule.",
+    "blog_creating": "Stronę tą tworzę samodzielnie w frameworku Nuxt.",
+    "about_versions": "Kolejne wersje strony i jej nowe funkcjonalności.",
+    "v_1.1": "Wersja 1.1: Dodanie wersji dark do czytania w nocy.",
+    "v_1.2": "Wersja 1.2: Rozszerzenie o wersje PWA (Progressiw Web Application), która daje możliwość czytania bloga offline.",
+    "v_1.3": "Wersja 1.3: Dodaję angielską wersję jezykową artykułów i części strony."
 }

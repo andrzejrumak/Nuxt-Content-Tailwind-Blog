@@ -8,7 +8,7 @@ author:
   bio: The father of 3 children
   img: /ois.jpg
 tags:
-  - moje
+  - my
 ---
 
 # The greatest love
